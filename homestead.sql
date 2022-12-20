@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: mysql
--- Thời gian đã tạo: Th12 20, 2022 lúc 08:14 AM
+-- Thời gian đã tạo: Th12 20, 2022 lúc 08:17 AM
 -- Phiên bản máy phục vụ: 8.0.31
 -- Phiên bản PHP: 8.0.19
 
@@ -56,7 +56,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `employee_id`, `franchise_id`, `name`, `station_id`, `email`, `password`, `email_verified_at`, `parent_id`, `phone`, `remember_token`, `status`, `allow_two_factor`, `created_at`, `updated_at`, `deleted_at`, `token`, `expires_at`, `two_factor_code`, `two_factor_expires_at`, `count_wrong_pwd`) VALUES
-('2ae7b451-661a-4a08-b60f-17030c4de824', 'A0022B', NULL, 'amlPbll4UlJHT0lwUlIwNjlBdUhMMWRhdXY3TDJWU2tQcnlDcUkzZVFJZmk4Uk1BbDBzdE15ZDlERllVcEZHdA==', NULL, 'ZW5UTG12ZUh4NW1vN0hwSWlwdTQ4aUx1bTJ1OXlBV2s1bFUwOFY1RGc3L2IxSlY2OWZYeHV4dmpSL0dhd1dCSA==', '$2y$10$0PoaoYG4KLViEHie/.a8I.vSAx.2A1gt41yKSyupEIxPVc9ip8o/e', '2022-12-19 11:23:55', NULL, NULL, NULL, 1, 1, '2022-12-19 11:23:55', '2022-12-19 11:23:55', NULL, NULL, NULL, NULL, NULL, 0);
+('055f779b-93d2-4d92-a13f-f1f120d259b3', 'A0022B', NULL, 'amlPbll4UlJHT0lwUlIwNjlBdUhMMWRhdXY3TDJWU2tQcnlDcUkzZVFJZmk4Uk1BbDBzdE15ZDlERllVcEZHdA==', NULL, 'ZW5UTG12ZUh4NW1vN0hwSWlwdTQ4aUx1bTJ1OXlBV2s1bFUwOFY1RGc3L2IxSlY2OWZYeHV4dmpSL0dhd1dCSA==', '$2y$10$dmpzx52UmWdYejWgOGP5yezU4aYNRhRAu/LfOo/wUxW/Z.mIzXjxq', '2022-12-19 12:04:25', NULL, NULL, NULL, 1, 1, '2022-12-19 12:04:25', '2022-12-19 12:04:25', NULL, NULL, NULL, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -198,7 +198,7 @@ CREATE TABLE `configs` (
 --
 
 INSERT INTO `configs` (`id`, `key`, `value`, `created_at`, `updated_at`) VALUES
-('33b59897-173d-4fbf-94a8-2b941fc9b6a0', 'work_days', '7', '2022-12-19 11:27:55', '2022-12-19 11:27:55');
+('45f6b6db-906e-42bc-a036-7e5d73fa46a8', 'work_days', '7', '2022-12-19 12:02:09', '2022-12-19 12:02:09');
 
 -- --------------------------------------------------------
 
@@ -286,8 +286,8 @@ CREATE TABLE `holiday_calendars` (
 --
 
 INSERT INTO `holiday_calendars` (`id`, `date`, `name`, `created_at`, `updated_at`) VALUES
-('554fc682-ab9f-414f-a6af-40362e5dc96d', '2022-01-01', 'Holiday', '2022-12-19 11:27:55', '2022-12-19 11:27:55'),
-('7f28a988-8b7f-4ad4-875f-420cfb8b5055', '2022-11-02', 'Holiday', '2022-12-19 11:27:55', '2022-12-19 11:27:55');
+('13c14cfc-b46c-4f66-ae11-d2b8bbbe170c', '2022-01-01', 'Holiday', '2022-12-19 12:02:09', '2022-12-19 12:02:09'),
+('55abf9c5-4fc0-4846-8cb0-47bcb55cdb90', '2022-11-02', 'Holiday', '2022-12-19 12:02:09', '2022-12-19 12:02:09');
 
 -- --------------------------------------------------------
 
@@ -743,11 +743,11 @@ CREATE TABLE `roles` (
 --
 
 INSERT INTO `roles` (`id`, `name`, `name_jp`, `rank`, `created_at`, `updated_at`) VALUES
-('44a657e9-22e7-4824-b2f1-9fb95b0e633a', 'agent_admin', '代理店', 2, NULL, NULL),
-('574040f4-2feb-4d5d-876a-1d3277e57f8f', 'shop_staff', 'スタッフ', 5, NULL, NULL),
-('dc72dace-5661-4c5f-9150-107b820f1a02', 'area_manager', 'エリアマネージャ', 4, NULL, NULL),
-('e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 'admin', 'システム管理者', 1, NULL, NULL),
-('eda44765-698f-40ef-99c5-050c96714765', 'shop_admin', '店舗管理者', 3, NULL, NULL);
+('92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 'shop_admin', '店舗管理者', 3, NULL, NULL),
+('c575c40e-28b4-4a15-bcd0-222fe370761b', 'agent_admin', '代理店', 2, NULL, NULL),
+('c972ec6d-6343-4780-9b68-2d411ff7cf25', 'area_manager', 'エリアマネージャ', 4, NULL, NULL),
+('dbb9154d-ee28-4a68-ab99-2012c9f9e808', 'admin', 'システム管理者', 1, NULL, NULL),
+('fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 'shop_staff', 'スタッフ', 5, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -774,7 +774,7 @@ CREATE TABLE `role_admins` (
 --
 
 INSERT INTO `role_admins` (`admin_id`, `role_id`, `franchise_id`, `station_id`, `agent_id`, `prefecture_id`, `admin_agent_id`, `admin_fc_id`, `admin_area_id`, `created_at`, `updated_at`) VALUES
-('2ae7b451-661a-4a08-b60f-17030c4de824', 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+('055f779b-93d2-4d92-a13f-f1f120d259b3', 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -830,125 +830,125 @@ CREATE TABLE `screen_permission_roles` (
 --
 
 INSERT INTO `screen_permission_roles` (`screen_id`, `permission_id`, `role_id`, `active`) VALUES
-(1, 2, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 0),
-(1, 2, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 0),
-(1, 2, 'eda44765-698f-40ef-99c5-050c96714765', 0),
-(1, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 0),
-(1, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 0),
-(2, 1, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(2, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(2, 3, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(2, 4, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(2, 1, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(2, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(2, 3, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(2, 4, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(2, 1, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(2, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(2, 3, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(2, 4, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(3, 1, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(3, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(3, 3, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(3, 4, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(3, 1, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(3, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(3, 3, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(3, 4, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(3, 1, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(3, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(3, 3, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(3, 4, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(4, 1, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(4, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(4, 3, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(4, 4, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(4, 1, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(4, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(4, 3, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(4, 4, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(4, 1, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(4, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(4, 3, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(4, 4, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(5, 1, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(5, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(5, 3, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(5, 4, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(5, 1, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(5, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(5, 3, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(5, 4, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(5, 1, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(5, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(5, 3, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(5, 4, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(6, 1, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(6, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(6, 3, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(6, 4, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(6, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(6, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(7, 2, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(7, 3, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(7, 2, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(7, 3, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(7, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(7, 3, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(7, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(7, 3, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(7, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(7, 3, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(8, 1, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(8, 2, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(8, 3, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(8, 4, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(9, 2, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(9, 2, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(9, 1, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(9, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(9, 3, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(9, 4, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(9, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(9, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(10, 2, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(10, 2, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(10, 1, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(10, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(10, 3, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(10, 4, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(10, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(10, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(11, 1, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(11, 2, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(11, 3, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(11, 4, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(11, 1, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(11, 2, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(11, 3, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(11, 4, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(11, 1, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(11, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(11, 3, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(11, 4, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(11, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(11, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(12, 2, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(12, 2, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(12, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(12, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(12, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1),
-(13, 1, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(13, 2, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(13, 3, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(13, 4, 'e30b6412-b523-4bc6-a9cb-1d49c8e3f580', 1),
-(13, 1, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(13, 2, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(13, 3, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(13, 4, '44a657e9-22e7-4824-b2f1-9fb95b0e633a', 1),
-(13, 2, 'eda44765-698f-40ef-99c5-050c96714765', 1),
-(13, 2, 'dc72dace-5661-4c5f-9150-107b820f1a02', 1),
-(13, 2, '574040f4-2feb-4d5d-876a-1d3277e57f8f', 1);
+(1, 2, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 0),
+(1, 2, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 0),
+(1, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 0),
+(1, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 0),
+(1, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 0),
+(2, 1, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(2, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(2, 3, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(2, 4, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(2, 1, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(2, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(2, 3, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(2, 4, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(2, 1, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(2, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(2, 3, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(2, 4, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(3, 1, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(3, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(3, 3, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(3, 4, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(3, 1, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(3, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(3, 3, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(3, 4, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(3, 1, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(3, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(3, 3, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(3, 4, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(4, 1, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(4, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(4, 3, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(4, 4, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(4, 1, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(4, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(4, 3, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(4, 4, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(4, 1, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(4, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(4, 3, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(4, 4, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(5, 1, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(5, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(5, 3, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(5, 4, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(5, 1, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(5, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(5, 3, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(5, 4, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(5, 1, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(5, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(5, 3, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(5, 4, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(6, 1, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(6, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(6, 3, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(6, 4, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(6, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(6, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(7, 2, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(7, 3, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(7, 2, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(7, 3, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(7, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(7, 3, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(7, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(7, 3, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(7, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(7, 3, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(8, 1, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(8, 2, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(8, 3, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(8, 4, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(9, 2, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(9, 2, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(9, 1, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(9, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(9, 3, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(9, 4, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(9, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(9, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(10, 2, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(10, 2, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(10, 1, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(10, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(10, 3, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(10, 4, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(10, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(10, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(11, 1, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(11, 2, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(11, 3, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(11, 4, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(11, 1, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(11, 2, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(11, 3, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(11, 4, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(11, 1, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(11, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(11, 3, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(11, 4, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(11, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(11, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(12, 2, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(12, 2, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(12, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(12, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(12, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1),
+(13, 1, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(13, 2, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(13, 3, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(13, 4, 'dbb9154d-ee28-4a68-ab99-2012c9f9e808', 1),
+(13, 1, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(13, 2, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(13, 3, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(13, 4, 'c575c40e-28b4-4a15-bcd0-222fe370761b', 1),
+(13, 2, '92ec2b6a-99b7-43c9-a0f5-f24893e7e1f0', 1),
+(13, 2, 'c972ec6d-6343-4780-9b68-2d411ff7cf25', 1),
+(13, 2, 'fa8ac449-3c1b-4bc7-8891-8e58f5bfae49', 1);
 
 -- --------------------------------------------------------
 
@@ -1063,9 +1063,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `first_name_kana`, `last_name`, `last_name_kana`, `email`, `email_verified_at`, `password`, `remember_token`, `phone`, `birthday`, `address1`, `status`, `google_id`, `apple_id`, `ekyc_status`, `biometric_cancel`, `reg_step`, `freekey_user_id`, `last_login`, `remarks`, `created_at`, `updated_at`, `gender`, `count_wrong_pwd`) VALUES
-('4fedae6d-3dd4-4084-af8e-d9fced39ecf2', 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'cytXN1YwMEJoNkUxVmRmSTVteTVHd3dTQ2RBeEtYcXQxVGVNc0FxNUpqVT0=', NULL, '$2y$10$QWdOlUD/FGGdtDFV6vCHUuZMAbudxrK2rQ7F7.RznGZ6Q3YVK3e6u', NULL, NULL, NULL, NULL, 1, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, '2022-12-19 11:27:55', '2022-12-19 11:27:55', NULL, 0),
-('70d124c7-00cb-471a-a1f6-5e69dd607822', 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'cytXN1YwMEJoNkUxVmRmSTVteTVHd3dTQ2RBeEtYcXQxVGVNc0FxNUpqVT0=', NULL, '$2y$10$8WoMyRdcqRrHVL.TorB/vu9C7Qt36Og9yoIinSNV0eSFs5nr76otq', NULL, NULL, NULL, NULL, 1, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, '2022-12-19 11:27:55', '2022-12-19 11:27:55', NULL, 0),
-('d9d3b2d6-401e-44d1-a593-5b10474b901d', 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'SlZOS0dYb2NQNjJDdS9OOUw0d1BkazlUNTJ2QkJMMG8yd2NFcHozSTQxTT0=', NULL, '$2y$10$UQE1F6atrSk4e2EcddG4t.Mwt96WBKmfTqwXW07qqRtj6paVQMBmu', NULL, NULL, NULL, NULL, 1, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, '2022-12-19 11:27:55', '2022-12-19 11:27:55', NULL, 0);
+('01ab8540-e53a-4f34-849e-cd8ab8751487', 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'SlZOS0dYb2NQNjJDdS9OOUw0d1BkazlUNTJ2QkJMMG8yd2NFcHozSTQxTT0=', NULL, '$2y$10$c9h3YZ85mb34Td88.me0QuEEl4hbHW9CUfx86Z5Er.PvhXz3EnjbW', NULL, NULL, NULL, NULL, 1, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, '2022-12-19 12:02:09', '2022-12-19 12:02:09', NULL, 0),
+('490c0ca7-50f9-4757-96f2-9c1b511881fa', 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'cytXN1YwMEJoNkUxVmRmSTVteTVHd3dTQ2RBeEtYcXQxVGVNc0FxNUpqVT0=', NULL, '$2y$10$GZ85Drsry3Jfe8n.ON9wQOXJtWQWCEOn7x2Nt0J7cxu.qWTPJWYMi', NULL, NULL, NULL, NULL, 1, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, '2022-12-19 12:02:09', '2022-12-19 12:02:09', NULL, 0),
+('707fa9ce-a4b7-4130-aee6-e3a6c0cc1dd3', 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'MGNlcGVVdHdYb1dvZ1VzUlBDa1RLdz09', NULL, 'cytXN1YwMEJoNkUxVmRmSTVteTVHd3dTQ2RBeEtYcXQxVGVNc0FxNUpqVT0=', NULL, '$2y$10$OkNNWBP28vtUndvkyVF0Iu3o130SlyLMR9Fh/lkIQtAmRRLN/H5jG', NULL, NULL, NULL, NULL, 1, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, '2022-12-19 12:02:09', '2022-12-19 12:02:09', NULL, 0);
 
 -- --------------------------------------------------------
 
